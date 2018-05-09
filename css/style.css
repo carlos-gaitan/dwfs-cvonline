@@ -1,0 +1,191 @@
+/*TODO*/
+/*darle animacion a la transicion y meter media query y listo se entrega*/
+
+/* General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0e8;
+}
+/* Header */
+header .social-icons {
+  /*Flex*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+header ul li {
+  list-style: none;
+  /*Flex*/
+}
+
+header ul li img {
+  width: 50px;
+}
+
+.wrapper {
+  margin:auto;
+  width: 90%;
+  max-width: 1000px;
+
+  /*Flex*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+aside {
+  width: 25%;
+  padding: 20px;
+  /*Flex*/
+  justify-content: center;
+  flex:1 1 30%;
+
+}
+aside img {
+  width: 80%;
+  border-radius:60%;
+  margin-bottom: 20%;
+/* para centrar - no pude con Float */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+aside ul li {
+  width: 80%;
+  background: #e0d1b6;
+  padding: 1%;
+  margin-bottom: 1%;
+  border-radius:5px;
+  list-style: none;
+  font-size: 80%;
+
+  /* para centrar - no pude con Float */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+aside ul li:hover {
+  transform: scale(1.1);
+}
+aside ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+section {
+
+  /*Flex*/
+  flex: 1 1 70%; /*grow shrink basis*/
+}
+
+section article {
+  background-color: #ffffff;
+  margin-top: 3%;
+  padding: 3%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  border-radius:5px;
+
+  /* para centrar - no pude con Float */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section article h1 {
+  font-size: 250%;
+}
+
+section article h2 {
+  color: #597f7b;
+  margin-bottom: 5%;
+}
+
+section article h3 {
+  color: #597f7b;
+  border-bottom: 3px solid #597f7b;
+  margin-bottom: 5%;
+}
+
+section article h4 {
+  color: #597f7b;
+  margin-top: 5%;
+}
+
+section article ul {
+  padding-left: 0%;
+  letter-spacing: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 5%;
+}
+
+section article p {
+
+  margin-top: 1%;
+  font-size: 85%;
+}
+
+section article.quien_soy li {
+  border-bottom: 0.2em dotted #f3d8d2;
+  list-style: none;
+
+}
+
+section article.quien_soy li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* TODO: No puedo hacer andar el texdecoration */
+section article.formacion a {
+  text-decoration: none;
+  color: black;
+}
+section article.formacion .subir a {
+  text-decoration: none;
+  color: #e0d1b6 ;
+}
+
+
+section article.portfolio ul {
+
+  /*Flex*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section article.portfolio ul li {
+  list-style: none;
+
+  /*Flex*/
+  flex: 0 1 25%;
+}
+
+section article.portfolio ul li img {
+  width: 150px;
+}
+
+/* FIXME: Aca no puedo hacer andar el padding-right */
+section article.skills .barra {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+section article.skills .html {width: 90%; background-color: #4CAF50;}
+section article.skills .css {width: 80%; background-color: #2196F3;}
+section article.skills .js {width: 65%; background-color: #f44336;}
+section article.skills .php {width: 60%; background-color: #808080;}
+
+
+/* Aca debo terminar el mediaquery */
+@media screen and (max-width: 800px) {
+}
