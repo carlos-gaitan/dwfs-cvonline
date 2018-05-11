@@ -16,11 +16,11 @@ header .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /*position: fixed;*/
 }
 
 header ul li {
   list-style: none;
+  padding-right: 0.5%;
   /*Flex*/
 }
 
@@ -51,7 +51,6 @@ aside img {
   width: 80%;
   border-radius:60%;
   margin-bottom: 20%;
-/* para centrar - no pude con Float */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +64,6 @@ aside ul li {
   border-radius:5px;
   list-style: none;
   font-size: 80%;
-  /* para centrar - no pude con Float */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +80,8 @@ aside ul li a {
 
 section {
   /*Flex*/
-  flex: 1 1 70%; /*grow shrink basis*/
+  /*grow shrink basis*/
+  flex: 1 1 70%;
 }
 
 section article {
@@ -92,7 +91,6 @@ section article {
   margin-right: 5%;
   margin-bottom: 1%;
   border-radius:5px;
-  /* para centrar - no pude con Float */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -140,20 +138,27 @@ section article.quien_soy li a {
   color: black;
 }
 
-/* TODO: No puedo hacer andar el texdecoration */
 section article.formacion a {
   text-decoration: none;
   color: black;
+}
+
+section article.formacion a:hover {
+  color: green;
 }
 
 section article .subir {
   padding-top: 50px;
 }
 
-section article .subir a{
+section article .subir a {
   text-decoration: none;
   font-weight: bold;
   color: #597f7b;
+}
+
+section article .subir a:hover {
+  color: green;
 }
 
 section article.portfolio ul {
@@ -172,7 +177,6 @@ section article.portfolio ul li img {
   width: 150px;
 }
 
-/* FIXME: Aca no puedo hacer andar el padding-right */
 section article.skills .barra {
   text-align: right;
   padding-right: 20px;
@@ -184,8 +188,3 @@ section article.skills .html {width: 90%; background-color: #4CAF50;}
 section article.skills .css {width: 80%; background-color: #2196F3;}
 section article.skills .js {width: 65%; background-color: #f44336;}
 section article.skills .php {width: 60%; background-color: #808080;}
-
-/* TODO: Aca debo terminar el mediaquery */
-/*
-@media screen and (max-width: 800px) {
-}*/
