@@ -1,6 +1,3 @@
-/*TODO*/
-/*darle animacion a la transicion y meter media query y listo se entrega*/
-
 /* General*/
 * {
   margin: 0;
@@ -11,13 +8,15 @@
 body {
   background: #f0f0e8;
 }
+
 /* Header */
 header .social-icons {
+  padding-top: 1%;
   /*Flex*/
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: fixed;
+  /*position: fixed;*/
 }
 
 header ul li {
@@ -39,14 +38,15 @@ header ul li img {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 aside {
   width: 25%;
   padding: 20px;
   /*Flex*/
   justify-content: center;
   flex:1 1 30%;
-
 }
+
 aside img {
   width: 80%;
   border-radius:60%;
@@ -55,8 +55,8 @@ aside img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
+
 aside ul li {
   width: 80%;
   background: #e0d1b6;
@@ -65,21 +65,22 @@ aside ul li {
   border-radius:5px;
   list-style: none;
   font-size: 80%;
-
   /* para centrar - no pude con Float */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 aside ul li:hover {
   transform: scale(1.1);
 }
+
 aside ul li a {
   text-decoration: none;
   color: #000000;
 }
-section {
 
+section {
   /*Flex*/
   flex: 1 1 70%; /*grow shrink basis*/
 }
@@ -91,12 +92,12 @@ section article {
   margin-right: 5%;
   margin-bottom: 1%;
   border-radius:5px;
-
   /* para centrar - no pude con Float */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 section article h1 {
   font-size: 250%;
 }
@@ -125,7 +126,6 @@ section article ul {
 }
 
 section article p {
-
   margin-top: 1%;
   font-size: 85%;
 }
@@ -133,7 +133,6 @@ section article p {
 section article.quien_soy li {
   border-bottom: 0.2em dotted #f3d8d2;
   list-style: none;
-
 }
 
 section article.quien_soy li a {
@@ -141,21 +140,23 @@ section article.quien_soy li a {
   color: black;
 }
 
-
-
 /* TODO: No puedo hacer andar el texdecoration */
 section article.formacion a {
   text-decoration: none;
   color: black;
 }
-section article.formacion .subir a {
-  text-decoration: none;
-  color: #e0d1b6 ;
+
+section article .subir {
+  padding-top: 50px;
 }
 
+section article .subir a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #597f7b;
+}
 
 section article.portfolio ul {
-
   /*Flex*/
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +164,6 @@ section article.portfolio ul {
 
 section article.portfolio ul li {
   list-style: none;
-
   /*Flex*/
   flex: 0 1 25%;
 }
@@ -185,7 +185,7 @@ section article.skills .css {width: 80%; background-color: #2196F3;}
 section article.skills .js {width: 65%; background-color: #f44336;}
 section article.skills .php {width: 60%; background-color: #808080;}
 
-
-/* Aca debo terminar el mediaquery */
+/* TODO: Aca debo terminar el mediaquery */
+/*
 @media screen and (max-width: 800px) {
-}
+}*/
